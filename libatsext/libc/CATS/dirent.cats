@@ -1,6 +1,6 @@
 /* ****** ****** */
 /*
-##libats_libc_header()
+##libatsext_libc_header()
 */
 /* ****** ****** */
 
@@ -19,8 +19,15 @@ struct dirent struct_dirent;
 /* ****** ****** */
 
 #define \
-dirent_get_d_name(ent) \
-(((struct_dirent*)ent)->d_name)
+libatsext_libc_dirent_get_d_name(ent) (((struct_dirent*)ent)->d_name)
+
+/* ****** ****** */
+
+#define libatsext_libc_opendir opendir
+
+#define libatsext_libc_closedir closedir
+
+#define libatsext_libc_readdir readdir
 
 /* ****** ****** */
 

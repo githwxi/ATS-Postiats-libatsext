@@ -141,4 +141,4 @@ overload .exch with ptr1_exch
 //
 (* ****** ****** *)
 
-(* end of [basis.sats] *)
+(* end of [libc_basis.sats] *)

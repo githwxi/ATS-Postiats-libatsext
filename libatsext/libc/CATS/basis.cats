@@ -1,6 +1,6 @@
 /* ****** ****** */
 /*
-##libats_libc_header()
+##libatsext_libc_header()
 */
 /* ****** ****** */
 
@@ -10,13 +10,15 @@
 /* ****** ****** */
 //
 #define \
-libcats_gt_ptr_intz(p, z) \
+libatsext_libc_gt_ptr_intz(p, z) \
 ((p>(void*)0)?atsbool_true:atsbool_false)
+//
 #define \
-libcats_eq_ptr_intz(p, z) \
+libatsext_libc_eq_ptr_intz(p, z) \
 ((p==(void*)0)?atsbool_true:atsbool_false)
+//
 #define \
-libcats_neq_ptr_intz(p, z) \
+libatsext_libc_neq_ptr_intz(p, z) \
 ((p!=(void*)0)?atsbool_true:atsbool_false)
 //
 /* ****** ****** */

@@ -20,7 +20,7 @@ ATS_EXTERN_PREFIX "libatsext_libc_"
 
 (* ****** ****** *)
 
-staload "./basis.sats"
+staload "./../libc_basis.sats"
 
 (* ****** ****** *)
 //
@@ -32,7 +32,7 @@ absvt0ype dirent = $extype"struct_dirent"
 //
 fun
 dirent_get_d_name
-  (rptr1(dirent)):<> string = "mac#%"
+  (rptr1(dirent)):<> cstring = "mac#%"
 //
 overload .d_name with dirent_get_d_name
 //
